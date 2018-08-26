@@ -632,3 +632,8 @@ nav.iconized-link-list > a > span
 {
 	text-align: center;
 }
+
+.rounded
+{
+	border-radius: 50%;
+}
