@@ -2,7 +2,7 @@
 
 *
 {
-	transition: 100ms ease;
+	transition: all 100ms ease, font 0ms;
 }
 
 body
