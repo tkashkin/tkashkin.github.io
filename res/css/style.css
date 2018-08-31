@@ -172,7 +172,7 @@ body.accent-orange > nav > section a
 	{
 		margin-left: -1em;
 	}
-	
+
 	body > header,
 	body > nav,
 	body > main,
@@ -402,8 +402,27 @@ ul.projects > li > div.tags > span
 ul.projects > li > div.tags > span > i
 {
 	margin-right: 2px;
+	width: 1.5em;
+	text-align: center;
 }
 
+ul.projects > li > div.tags > span.java
+{
+	border: 1px #ed8b00 solid;
+	color: #ed8b00;
+}
+
+ul.projects > li > div.tags > span.android
+{
+	border: 1px #a4c639 solid;
+	color: #a4c639;
+}
+
+ul.projects > li > div.tags > span.vala
+{
+	border: 1px #403757 solid;
+	color: #403757;
+}
 
 div.screenshots
 {
@@ -611,17 +630,17 @@ nav.iconized-link-list > a > span
 	{
 		margin: 8px -16px;
 	}
-	
+
 	nav.iconized-link-list > hr
 	{
 		margin: 4px 0;
 	}
-	
+
 	nav.iconized-link-list
 	{
 		margin: 0 -16px;
 	}
-	
+
 	nav.iconized-link-list > a
 	{
 		padding: 8px 16px;
