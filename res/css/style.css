@@ -402,14 +402,14 @@ ul.projects > li > div.tags > span
 ul.projects > li > div.tags > span > i
 {
 	margin-right: 2px;
-	width: 1.5em;
+	width: 1em;
 	text-align: center;
 }
 
 ul.projects > li > div.tags > span.java
 {
-	border: 1px #ed8b00 solid;
-	color: #ed8b00;
+	border: 1px #007396 solid;
+	color: #007396;
 }
 
 ul.projects > li > div.tags > span.android
