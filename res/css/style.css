@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700|Noto+Sans:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
 
-*
+a
 {
 	transition: all 100ms ease, font 0ms;
 }
@@ -13,7 +13,7 @@ body
 	margin: 0;
 	padding: 0;
 	background-color: #fdfdfd;
-	font-family: 'Lato', 'PT Sans', 'Noto Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'PT Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -61,6 +61,17 @@ a.anchor
 	color: #333;
 }
 
+a.anchor:before
+{
+	display: inline-block;
+	content: ' ';
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden;
+	pointer-events: none;
+	outline: none;
+}
+
 a.anchor:hover
 {
 	text-decoration: underline;
@@ -83,7 +94,8 @@ body > header
 	color: #eee;
 }
 
-body > header > section.iconized
+body > header > section.iconized,
+body > footer > section > section
 {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -92,7 +104,8 @@ body > header > section.iconized
 	align-items: center;
 }
 
-body > header > section.iconized > .grow
+body > header > section.iconized > .grow,
+body > footer > section > section > .grow
 {
 	flex-grow: 1;
 }
@@ -111,8 +124,7 @@ body.accent-orange > header
 
 body > header,
 body > nav,
-body > main,
-body > footer
+body > main
 {
 	padding: 0 8px;
 }
@@ -150,13 +162,47 @@ body > footer h5:not(:first-child), body > footer h6:not(:first-child)
 body > nav
 {
 	background-color: #eee;
+	overflow-x: auto;
+	overflow-y: visible;
+	box-shadow: 0 0 0 0 transparent;
+	transition: box-shadow 250ms ease;
+}
+
+body > nav.sticky
+{
+	box-shadow: 0 1px 4px 0 #3338;
+}
+
+body.ios > nav.sticky
+{
+	background-color: #fffb !important;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+body.safari > nav.sticky
+{
+	background-color: #dddc;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+body > nav > section
+{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: visible;
+	flex-wrap: nowrap;
 }
 
 body > nav > section a
 {
-	color: #333;
-	padding: 0.5em 1em;
 	display: inline-block;
+	padding: 0 0.5em;
+	height: 42px;
+	line-height: 42px;
+	color: #333;
 	text-decoration: none;
 	font-weight: normal;
 }
@@ -173,12 +219,25 @@ body.accent-orange > nav > section a
 		margin-left: -1em;
 	}
 
+	body > nav > section a
+	{
+		padding: 0 1em;
+	}
+
 	body > header,
 	body > nav,
-	body > main,
-	body > footer
+	body > main
 	{
 		padding: 0;
+	}
+
+	body > footer > section
+	{
+		overflow-x: visible;
+	}
+	body > footer > section > section
+	{
+		margin: 0 -10px;
 	}
 }
 
@@ -194,7 +253,8 @@ body > nav > section a.active
 	color: #3689e6;
 	font-weight: bold;
 	border-bottom: 2px #3689e6 solid;
-	margin-bottom: -2px;
+	height: 40px;
+	line-height: 40px;
 }
 
 body > nav > section a.active:hover
@@ -251,7 +311,6 @@ body > main
 	overflow-y: hidden;
 }
 
-
 body > main > section > header *
 {
 	margin-top: 0.1em;
@@ -262,6 +321,64 @@ body > footer
 {
 	background-color: #333;
 	color: #eee;
+	overflow: hidden;
+}
+
+body > footer > section > section > i
+{
+	margin: 0 16px;
+}
+
+body > footer > section > section > nav
+{
+	overflow-x: auto;
+	height: 42px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+body > footer > section > section > nav.language-selector
+{
+	flex-shrink: 0;
+}
+
+body > footer > section > section > nav > a
+{
+	flex-shrink: 0;
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	color: #eee !important;
+	font-weight: normal;
+	cursor: pointer;
+	border-bottom: 0px #0d52bf solid;
+}
+
+body > footer > section > section > nav > a:hover
+{
+	background-color: #3689e6;
+	text-decoration: none;
+	color: #eee !important;
+}
+
+body > footer > section > section > nav > a:active
+{
+	background-color: #0d52bf;
+	font-weight: bold;
+	color: #eee !important;
+}
+
+body > footer > section > section > nav > a.active
+{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 2px #0d52bf solid;
+	font-weight: bold;
+	color: #eee !important;
 }
 
 ul.projects
@@ -328,7 +445,7 @@ ul.projects > li > a:first-child > *
 
 ul.projects > li > a.project-link
 {
-	display: inline;
+	display: block;
 	font-size: 16px;
 	width: 32px;
 	padding: 3px 0 4px 0;
@@ -655,4 +772,15 @@ nav.iconized-link-list > a > span
 .rounded
 {
 	border-radius: 50%;
+}
+
+body > nav
+{
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 }
