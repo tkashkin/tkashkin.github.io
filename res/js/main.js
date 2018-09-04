@@ -24,7 +24,7 @@
 		lang = lang.split('-')[0].toLowerCase();
 		if(['en', 'ru'].indexOf(lang) < 0) return;
 
-		localStorage.getItem('lang', lang);
+		localStorage.lang = lang;
 
 		var attr = 'data-text-' + lang;
 		q('[' + attr + ']', function(el){
@@ -73,7 +73,7 @@
 	}
 
 	setTimeout(function(){
-		localize(localStorage.getItem('lang') || navigator.language || navigator.userLanguage);
+		localize(localStorage.lang || navigator.language || navigator.userLanguage);
 
 		if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) document.body.classList.add('ios');
 		if(!!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/) && !(!!navigator.userAgent.match(/Linux/))) document.body.classList.add('safari');
@@ -97,5 +97,5 @@
 		f();
 	}, 0);
 
-	localize(localStorage.getItem('lang') || navigator.language || navigator.userLanguage);
+	localize(localStorage.lang || navigator.language || navigator.userLanguage);
 })();
