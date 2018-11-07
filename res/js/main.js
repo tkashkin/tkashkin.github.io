@@ -52,10 +52,10 @@
 				var rect = anchor.getBoundingClientRect();
 				if(rect.top < 64)
 				{
-					var a = e('body > nav > section > a[href$="' + anchor.name + '"]')[0]
+					var a = q('body > nav > section > a[href$="' + anchor.name + '"]')[0];
 					if(a)
 					{
-						var o = e('body > nav > section > a.active')[0];
+						var o = q('body > nav > section > a.active')[0];
 						if(o) o.classList.remove('active');
 						a.classList.add('active');
 					}
@@ -67,9 +67,9 @@
 		{
 			el.classList.remove('sticky');
 		}
-		var o = e('body > nav > section > a.active')[0];
+		var o = q('body > nav > section > a.active')[0];
 		if(o) o.classList.remove('active');
-		e('body > nav > section > a.initial')[0].classList.add('active');
+		q('body > nav > section > a.initial')[0].classList.add('active');
 	}
 
 	setTimeout(function(){
@@ -98,4 +98,7 @@
 	}, 0);
 
 	localize(localStorage.lang || navigator.language || navigator.userLanguage);
+
+	window.q = q;
+	window.e = e;
 })();

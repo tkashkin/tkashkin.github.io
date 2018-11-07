@@ -7,24 +7,25 @@
 		<title>GameHub</title>
 
 		<link rel="stylesheet" href="/res/css/style.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+		<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+		<link rel="stylesheet" href="//cdn.rawgit.com/Lukas-W/font-logos/v0.11/assets/font-logos.css" />
 
-		<link rel="apple-touch-icon" sizes="57x57" href="/res/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/res/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/res/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/res/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/res/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/res/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/res/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/res/favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/res/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/res/favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/res/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/res/favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/res/favicon/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="/res/favicon/apple-icon-57x57.webp">
+		<link rel="apple-touch-icon" sizes="60x60" href="/res/favicon/apple-icon-60x60.webp">
+		<link rel="apple-touch-icon" sizes="72x72" href="/res/favicon/apple-icon-72x72.webp">
+		<link rel="apple-touch-icon" sizes="76x76" href="/res/favicon/apple-icon-76x76.webp">
+		<link rel="apple-touch-icon" sizes="114x114" href="/res/favicon/apple-icon-114x114.webp">
+		<link rel="apple-touch-icon" sizes="120x120" href="/res/favicon/apple-icon-120x120.webp">
+		<link rel="apple-touch-icon" sizes="144x144" href="/res/favicon/apple-icon-144x144.webp">
+		<link rel="apple-touch-icon" sizes="152x152" href="/res/favicon/apple-icon-152x152.webp">
+		<link rel="apple-touch-icon" sizes="180x180" href="/res/favicon/apple-icon-180x180.webp">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/res/favicon/android-icon-192x192.webp">
+		<link rel="icon" type="image/png" sizes="32x32" href="/res/favicon/favicon-32x32.webp">
+		<link rel="icon" type="image/png" sizes="96x96" href="/res/favicon/favicon-96x96.webp">
+		<link rel="icon" type="image/png" sizes="16x16" href="/res/favicon/favicon-16x16.webp">
 		<link rel="manifest" href="/res/favicon/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/res/favicon/ms-icon-144x144.png">
+		<meta name="msapplication-TileImage" content="/res/favicon/ms-icon-144x144.webp">
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
@@ -32,7 +33,7 @@
 			<section class="iconized">
 				<section class="grow">
 					<h1>GameHub</h1>
-					<h4 class="regular" data-text-ru="Менеджер библиотеки игр, поддерживает Steam, GOG и Humble Bundle.">Games manager/downloader/library, supports Steam, GOG and Humble Bundle.</h4>
+					<h4 class="regular" data-text-ru="Единая библиотека для всех ваших игр">Unified library for all your games, written in Vala using GTK+3, designed for elementary OS</h4>
 				</section>
 				<img src="https://raw.githubusercontent.com/tkashkin/GameHub/master/data/com.github.tkashkin.gamehub.svg?sanitize=true" />
 			</section>
@@ -45,6 +46,7 @@
 				--><a href="/projects/gamehub" class="initial active">/projects/gamehub</a><!--
 				--><a href="/projects/gamehub/#/sources">#/sources</a><!--
 				--><a href="/projects/gamehub/#/features">#/features</a><!--
+				--><a href="/projects/gamehub/#/games">#/games</a><!--
 				--><a href="/projects/gamehub/#/screenshots">#/screenshots</a>
 			</section>
 		</nav>
@@ -57,6 +59,19 @@
 				<a class="button github" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
 					<i class="fab fa-github"></i> <span data-text-ru="Релизы">Releases</span>
 				</a>
+				<a class="button github" target="_blank" href="https://github.com/tkashkin/GameHub/#installation">
+					<i class="fas fa-cloud-download-alt"></i> <span data-text-ru="Инструкции по установке">Installation instructions</span>
+				</a>
+				<hr />
+				<a class="button accent-orange package-deb" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
+					<i><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span></i> <span>.deb</span> <span class="counter">0</span>
+				</a>
+				<a class="button package-appimage" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
+					<i class="fas fa-box"></i> <span>AppImage</span> <span class="counter">0</span>
+				</a>
+				<a class="button package-flatpak" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
+					<i class="fl-flathub"></i> <span>flatpak</span> <span class="counter">0</span>
+				</a>
 			</section>
 		</main>
 
@@ -65,13 +80,15 @@
 				<header>
 					<h2><a class="anchor" name="/sources" href="/projects/gamehub/#/sources" data-text-ru="Источники игр">Game sources</a></h2>
 				</header>
-				<p data-text-ru="GameHub поддерживает несколько источников игр.">GameHub supports multiple game sources and services.</p>
-				<p><b data-text-ru="Поддерживаемые источники:">Currently supported sources:</b></p>
+
+				<p data-text-ru="GameHub поддерживает несколько источников игр:">GameHub supports multiple game sources and services:</p>
 				<ul>
 					<li>Steam</li>
 					<li>GOG</li>
 					<li>Humble Bundle</li>
+					<li>Humble Trove</li>
 				</ul>
+				<p data-text-ru="Игры, установленные локально, также могут быть добавлены в GameHub.">Locally installed games can also be added to GameHub.</p>
 			</section>
 		</main>
 
@@ -81,45 +98,78 @@
 					<h2><a class="anchor" name="/features" href="/projects/gamehub/#/features" data-text-ru="Функции">Features</a></h2>
 				</header>
 				<p data-text-ru="GameHub позволяет просматривать, скачивать, устанавливать, запускать и удалять игры из поддерживаемых источников.">GameHub allows to view, download, install, run and uninstall games from supported sources.</p>
-				<p data-text-ru="Также поддерживается загрузка бонусного контента для игр GOG.">It also allows to download bonus content for GOG games.</p>
+				<p data-text-ru="Также поддерживается загрузка бонусного контента и DLC для игр GOG.">It also allows to download bonus content and DLCs for GOG games.</p>
 			</section>
 		</main>
 
 		<main class="dim">
 			<section>
 				<header>
+					<h2><a class="anchor" name="/games" href="/projects/gamehub/#/games" data-text-ru="Игры">Games</a></h2>
+				</header>
+				<p data-text-ru="GameHub поддерживает как ненативные игры, так и игры для Linux.">GameHub supports non-native games as well as native games for Linux.</p>
+				<p><span data-text-ru="Поддерживается несколько">It supports multiple</span> <a target="_blank" href="https://github.com/tkashkin/GameHub/wiki/Compatibility-layers" data-text-ru="слоёв совместимости">compatibility layers</a> <span data-text-ru="для ненативных игр:">for non-native games:</span></p>
+				<ul>
+					<li>Wine / Proton</li>
+					<li>DOSBox</li>
+					<li>RetroArch</li>
+				</ul>
+				<p data-text-ru="Также возможно добавление других эмуляторов.">It also allows to add custom emulators.</p>
+			</section>
+		</main>
+
+		<main>
+			<section>
+				<header>
 					<h2><a class="anchor" name="/screenshots" href="/projects/gamehub/#/screenshots" data-text-ru="Скриншоты">Screenshots</a></h2>
 				</header>
+				<p data-text-ru="Наведите курсор на скриншоты, чтобы посмотреть тёмную тему.">Hover over screenshots to see dark theme.</p>
 				<div class="screenshots">
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/1.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/1.png?raw=true">
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/welcome.webp">
+						<img src="/projects/gamehub/res/screenshots/light@thumb/welcome.webp" srcset="/projects/gamehub/res/screenshots/light/welcome.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/welcome.webp" srcset="/projects/gamehub/res/screenshots/dark/welcome.webp 2x" />
+						<span>Welcome view</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/1_dark.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/1_dark.png?raw=true">
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/gridx.webp">
+						<img src="/projects/gamehub/res/screenshots/light@thumb/grid.webp" srcset="/projects/gamehub/res/screenshots/light/grid.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/grid.webp" srcset="/projects/gamehub/res/screenshots/dark/grid.webp 2x" />
+						<span>Grid view</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/2.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/2.png?raw=true">
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/list.webp">
+						<img src="/projects/gamehub/res/screenshots/light@thumb/list.webp" srcset="/projects/gamehub/res/screenshots/light/list.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/list.webp" srcset="/projects/gamehub/res/screenshots/dark/list.webp 2x" />
+						<span>List view</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/2_dark.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/2_dark.png?raw=true">
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/grid_gamepad.webp">
+						<img src="/projects/gamehub/res/screenshots/light@thumb/grid_gamepad.webp" srcset="/projects/gamehub/res/screenshots/light/grid_gamepad.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/grid_gamepad.webp" srcset="/projects/gamehub/res/screenshots/dark/grid_gamepad.webp 2x" />
+						<span>Grid view in gamepad mode</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/3.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/3.png?raw=true">
+					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/install.webp">
+						<img src="/projects/gamehub/res/screenshots/light/install.webp" srcset="/projects/gamehub/res/screenshots/light@2x/install.webp 2x" />
+						<span>Game installation</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/3_dark.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/3_dark.png?raw=true">
+					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/overlays.webp">
+						<img src="/projects/gamehub/res/screenshots/light/overlays.webp" srcset="/projects/gamehub/res/screenshots/light@2x/overlays.webp 2x" />
+						<span>Game overlays</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/3_dialog.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/3_dialog.png?raw=true">
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/settings_collection.webp">
+						<img src="/projects/gamehub/res/screenshots/light/settings_collection.webp" srcset="/projects/gamehub/res/screenshots/light@2x/settings_collection.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark/settings_collection.webp" srcset="/projects/gamehub/res/screenshots/dark@2x/settings_collection.webp 2x" />
+						<span>Collection settings</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/3_dialog_dark.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/3_dialog_dark.png?raw=true">
+					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/install_compat.webp">
+						<img src="/projects/gamehub/res/screenshots/light/install_compat.webp" srcset="/projects/gamehub/res/screenshots/light@2x/install_compat.webp 2x" />
+						<span>Game installation (compatibility)</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/4.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/4.png?raw=true">
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/details.webp">
+						<img src="/projects/gamehub/res/screenshots/light/details.webp" srcset="/projects/gamehub/res/screenshots/light@2x/details.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark/details.webp" srcset="/projects/gamehub/res/screenshots/dark@2x/details.webp 2x" />
+						<span>Game details</span>
 					</a>
-					<a target="_blank" href="https://github.com/tkashkin/GameHub/blob/master/data/screenshots/4_dark.png?raw=true">
-						<img src="https://github.com/tkashkin/GameHub/raw/master/data/screenshots/4_dark.png?raw=true">
+					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/properties.webp">
+						<img src="/projects/gamehub/res/screenshots/light/properties.webp" srcset="/projects/gamehub/res/screenshots/light@2x/properties.webp 2x" />
+						<span>Game properties</span>
 					</a>
 				</div>
 			</section>
@@ -150,6 +200,7 @@
 		</footer>
 
 		<script src="/res/js/main.js"></script>
+		<script src="/projects/gamehub/res/js/gamehub.js"></script>
 
 	</body>
 </html>
