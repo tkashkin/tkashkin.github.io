@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
 
+html, body
+{
+	scroll-behavior: smooth;
+}
+
 a
 {
 	transition: all 100ms ease, font 0ms;
