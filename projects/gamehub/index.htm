@@ -44,9 +44,11 @@
 				<a href="/">/</a><!--
 				--><a href="/#/projects">/#/projects</a><!--
 				--><a href="/projects/gamehub" class="initial active">/projects/gamehub</a><!--
-				--><a href="/projects/gamehub/#/sources">#/sources</a><!--
 				--><a href="/projects/gamehub/#/features">#/features</a><!--
 				--><a href="/projects/gamehub/#/games">#/games</a><!--
+				--><a href="/projects/gamehub/#/sources">#/sources</a><!--
+				--><a href="/projects/gamehub/#/collection">#/collection</a><!--
+				--><a href="/projects/gamehub/#/overlays">#/overlays</a><!--
 				--><a href="/projects/gamehub/#/screenshots">#/screenshots</a>
 			</section>
 		</nav>
@@ -54,7 +56,7 @@
 		<main>
 			<section class="center">
 				<a class="button github" target="_blank" href="https://github.com/tkashkin/GameHub">
-					<i class="fab fa-github"></i> Github
+					<i class="fab fa-github"></i> GitHub
 				</a>
 				<a class="button github" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
 					<i class="fab fa-github"></i> <span data-text-ru="Релизы">Releases</span>
@@ -75,61 +77,119 @@
 			</section>
 		</main>
 
-		<main id="/sources" class="dim">
-			<section>
-				<header>
-					<h2><a class="anchor" name="/sources" href="/projects/gamehub/#/sources" data-text-ru="Источники игр">Game sources</a></h2>
-				</header>
-
-				<p data-text-ru="GameHub поддерживает несколько источников игр:">GameHub supports multiple game sources and services:</p>
-				<ul>
-					<li>Steam</li>
-					<li>GOG</li>
-					<li>Humble Bundle</li>
-					<li>Humble Trove</li>
-				</ul>
-				<p data-text-ru="Игры, установленные локально, также могут быть добавлены в GameHub.">Locally installed games can also be added to GameHub.</p>
+		<main id="/features" class="dim">
+			<section class="screenshot right">
+				<aside>
+					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/install.webp">
+						<img src="/projects/gamehub/res/screenshots/light/install.webp" srcset="/projects/gamehub/res/screenshots/light@2x/install.webp 2x" />
+					</a>
+				</aside>
+				<main>
+					<header>
+						<h2><a class="anchor" name="/features" href="/projects/gamehub/#/features" data-text-ru="Функции">Features</a></h2>
+					</header>
+					<p><span data-text-ru="GameHub позволяет просматривать, скачивать, устанавливать, запускать и удалять игры из">GameHub allows to view, download, install, run and uninstall games from</span> <a href="/projects/gamehub/#/sources" data-text-ru="поддерживаемых источников">supported sources</a>.</p>
+				</main>
 			</section>
 		</main>
 
-		<main id="/features">
-			<section>
-				<header>
-					<h2><a class="anchor" name="/features" href="/projects/gamehub/#/features" data-text-ru="Функции">Features</a></h2>
-				</header>
-				<p data-text-ru="GameHub позволяет просматривать, скачивать, устанавливать, запускать и удалять игры из поддерживаемых источников.">GameHub allows to view, download, install, run and uninstall games from supported sources.</p>
-				<p data-text-ru="Также поддерживается загрузка бонусного контента и DLC для игр GOG.">It also allows to download bonus content and DLCs for GOG games.</p>
+		<main id="/games" class="dim continue">
+			<section class="screenshot right">
+				<aside>
+					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/install_compat.webp">
+						<img src="/projects/gamehub/res/screenshots/light/install_compat.webp" srcset="/projects/gamehub/res/screenshots/light@2x/install_compat.webp 2x" />
+					</a>
+				</aside>
+				<main>
+					<header>
+						<h2><a class="anchor" name="/games" href="/projects/gamehub/#/games" data-text-ru="Игры">Games</a></h2>
+					</header>
+					<p data-text-ru="GameHub поддерживает как ненативные игры, так и игры для Linux.">GameHub supports non-native games as well as native games for Linux.</p>
+					<hr />
+					<p><span data-text-ru="Поддерживается несколько">It supports multiple</span> <a target="_blank" href="https://github.com/tkashkin/GameHub/wiki/Compatibility-layers" data-text-ru="слоёв совместимости">compatibility layers</a> <span data-text-ru="для ненативных игр:">for non-native games:</span></p>
+					<ul>
+						<li>Wine / Proton</li>
+						<li>DOSBox</li>
+						<li>RetroArch</li>
+						<li>ScummVM</li>
+					</ul>
+					<p data-text-ru="Также возможно добавление других эмуляторов.">It also allows to add custom emulators.</p>
+					<hr />
+					<p><span data-text-ru="GameHub поддерживает">GameHub supports</span> <a target="_blank" href="https://www.gog.com/forum/general/adamhms_linux_wine_wrappers_news_faq_discussion/post1">WineWrap</a> &mdash; <span data-text-ru="набор настроенных обёрток для">a set of preconfigured wrappers for</span> <a target="_blank" href="https://www.gog.com/forum/general/adamhms_linux_wine_wrappers_news_faq_discussion/post3" data-text-ru="поддерживаемых игр">supported games</a>.</p>
+				</main>
 			</section>
 		</main>
 
-		<main id="/games" class="dim">
-			<section>
-				<header>
-					<h2><a class="anchor" name="/games" href="/projects/gamehub/#/games" data-text-ru="Игры">Games</a></h2>
-				</header>
-				<p data-text-ru="GameHub поддерживает как ненативные игры, так и игры для Linux.">GameHub supports non-native games as well as native games for Linux.</p>
-				<p><span data-text-ru="Поддерживается несколько">It supports multiple</span> <a target="_blank" href="https://github.com/tkashkin/GameHub/wiki/Compatibility-layers" data-text-ru="слоёв совместимости">compatibility layers</a> <span data-text-ru="для ненативных игр:">for non-native games:</span></p>
-				<ul>
-					<li>Wine / Proton</li>
-					<li>DOSBox</li>
-					<li>RetroArch</li>
-				</ul>
-				<p data-text-ru="Также возможно добавление других эмуляторов.">It also allows to add custom emulators.</p>
+		<main id="/sources">
+			<section class="screenshot left">
+				<aside>
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/welcome.webp">
+						<img src="/projects/gamehub/res/screenshots/light@thumb/welcome.webp" srcset="/projects/gamehub/res/screenshots/light/welcome.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/welcome.webp" srcset="/projects/gamehub/res/screenshots/dark/welcome.webp 2x" />
+					</a>
+				</aside>
+				<main>
+					<header>
+						<h2><a class="anchor" name="/sources" href="/projects/gamehub/#/sources" data-text-ru="Источники игр">Game sources</a></h2>
+					</header>
+
+					<p data-text-ru="GameHub поддерживает несколько источников игр:">GameHub supports multiple game sources and services:</p>
+					<ul>
+						<li>Steam</li>
+						<li>GOG</li>
+						<li>Humble Bundle</li>
+						<li>Humble Trove</li>
+					</ul>
+					<p data-text-ru="Игры, установленные локально, также могут быть добавлены в GameHub.">Locally installed games can also be added to GameHub.</p>
+				</main>
 			</section>
 		</main>
 
-		<main id="/screenshots">
+		<main id="/collection" class="dim">
+			<section class="screenshot right">
+				<aside>
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/settings_collection.webp">
+						<img src="/projects/gamehub/res/screenshots/light/settings_collection.webp" srcset="/projects/gamehub/res/screenshots/light@2x/settings_collection.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark/settings_collection.webp" srcset="/projects/gamehub/res/screenshots/dark@2x/settings_collection.webp 2x" />
+					</a>
+				</aside>
+				<main>
+					<header>
+						<h2><a class="anchor" name="/collection" href="/projects/gamehub/#/collection" data-text-ru="Коллекция">Collection</a></h2>
+					</header>
+					<p data-text-ru="GameHub делает хранение и управление коллекцией DRM-free игр проще.">GameHub makes storing and managing your DRM-free game collection easier.</p>
+					<hr />
+					<p data-text-ru="Загрузите установщики, DLC и бонусный контент и GameHub сохранит загрузки в соответствии с настройками.">Download installers, DLCs and bonus content and GameHub will save your downloads according to settings.</p>
+				</main>
+			</section>
+		</main>
+
+		<main id="/overlays">
+			<section class="screenshot left">
+				<aside>
+					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/overlays.webp">
+						<img src="/projects/gamehub/res/screenshots/light/overlays.webp" srcset="/projects/gamehub/res/screenshots/light@2x/overlays.webp 2x" />
+					</a>
+				</aside>
+				<main>
+					<header>
+						<h2><a class="anchor" name="/overlays" href="/projects/gamehub/#/overlays" data-text-ru="Оверлеи">Filesystem overlays</a></h2>
+					</header>
+					<p data-text-ru="GameHub поддерживает переключаемые оверлеи.">GameHub supports toggleable filesystem overlays.</p>
+					<hr />
+					<p data-text-ru="Это позволяет устанавливать, удалять, включать и отключать DLC или моды без замены файлов игры в любое время.">It allows to install, uninstall, enable and disable DLCs or mods without replacing game files at any time.</p>
+					<p data-text-ru="Каждый оверлей хранится в отдельной директории и не влияет на другие оверлеи.">Each overlay is stored separately and does not affect other overlays.</p>
+					<p data-text-ru="Все изменения файлов игры хранятся в отдельной директории и их возможно отменить.">All changes to the game files are stored in a separate directory and are easy to revert.</p>
+				</main>
+			</section>
+		</main>
+
+		<main id="/screenshots" class="dim">
 			<section>
 				<header>
 					<h2><a class="anchor" name="/screenshots" href="/projects/gamehub/#/screenshots" data-text-ru="Скриншоты">Screenshots</a></h2>
 				</header>
-				<p data-text-ru="Наведите курсор на скриншоты, чтобы посмотреть тёмную тему.">Hover over screenshots to see dark theme.</p>
 				<div class="screenshots">
-					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/welcome.webp">
-						<img src="/projects/gamehub/res/screenshots/light@thumb/welcome.webp" srcset="/projects/gamehub/res/screenshots/light/welcome.webp 2x" />
-						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/welcome.webp" srcset="/projects/gamehub/res/screenshots/dark/welcome.webp 2x" />
-						<span>Welcome view</span>
-					</a>
 					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/grid.webp">
 						<img src="/projects/gamehub/res/screenshots/light@thumb/grid.webp" srcset="/projects/gamehub/res/screenshots/light/grid.webp 2x" />
 						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/grid.webp" srcset="/projects/gamehub/res/screenshots/dark/grid.webp 2x" />
@@ -140,28 +200,6 @@
 						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/list.webp" srcset="/projects/gamehub/res/screenshots/dark/list.webp 2x" />
 						<span>List view</span>
 					</a>
-					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/grid_gamepad.webp">
-						<img src="/projects/gamehub/res/screenshots/light@thumb/grid_gamepad.webp" srcset="/projects/gamehub/res/screenshots/light/grid_gamepad.webp 2x" />
-						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/grid_gamepad.webp" srcset="/projects/gamehub/res/screenshots/dark/grid_gamepad.webp 2x" />
-						<span>Grid view in gamepad mode</span>
-					</a>
-					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/install.webp">
-						<img src="/projects/gamehub/res/screenshots/light/install.webp" srcset="/projects/gamehub/res/screenshots/light@2x/install.webp 2x" />
-						<span>Game installation</span>
-					</a>
-					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/overlays.webp">
-						<img src="/projects/gamehub/res/screenshots/light/overlays.webp" srcset="/projects/gamehub/res/screenshots/light@2x/overlays.webp 2x" />
-						<span>Game overlays</span>
-					</a>
-					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/settings_collection.webp">
-						<img src="/projects/gamehub/res/screenshots/light/settings_collection.webp" srcset="/projects/gamehub/res/screenshots/light@2x/settings_collection.webp 2x" />
-						<img class="dark" src="/projects/gamehub/res/screenshots/dark/settings_collection.webp" srcset="/projects/gamehub/res/screenshots/dark@2x/settings_collection.webp 2x" />
-						<span>Collection settings</span>
-					</a>
-					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/install_compat.webp">
-						<img src="/projects/gamehub/res/screenshots/light/install_compat.webp" srcset="/projects/gamehub/res/screenshots/light@2x/install_compat.webp 2x" />
-						<span>Game installation (compatibility)</span>
-					</a>
 					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/details.webp">
 						<img src="/projects/gamehub/res/screenshots/light/details.webp" srcset="/projects/gamehub/res/screenshots/light@2x/details.webp 2x" />
 						<img class="dark" src="/projects/gamehub/res/screenshots/dark/details.webp" srcset="/projects/gamehub/res/screenshots/dark@2x/details.webp 2x" />
@@ -170,6 +208,11 @@
 					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/properties.webp">
 						<img src="/projects/gamehub/res/screenshots/light/properties.webp" srcset="/projects/gamehub/res/screenshots/light@2x/properties.webp 2x" />
 						<span>Game properties</span>
+					</a>
+					<a target="_blank" class="dark" href="/projects/gamehub/res/screenshots/light@2x/grid_gamepad.webp">
+						<img src="/projects/gamehub/res/screenshots/light@thumb/grid_gamepad.webp" srcset="/projects/gamehub/res/screenshots/light/grid_gamepad.webp 2x" />
+						<img class="dark" src="/projects/gamehub/res/screenshots/dark@thumb/grid_gamepad.webp" srcset="/projects/gamehub/res/screenshots/dark/grid_gamepad.webp 2x" />
+						<span>Grid view in controller mode</span>
 					</a>
 				</div>
 			</section>

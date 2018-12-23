@@ -546,7 +546,7 @@ ul.projects > li > div.tags > span.vala
 	color: #403757;
 }
 
-div.screenshots
+div.screenshots, body > main > section.screenshot > aside
 {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -556,11 +556,71 @@ div.screenshots
 	align-items: center;
 }
 
+body > main > section.screenshot
+{
+	overflow-x: hidden;
+}
+
+body > main > section.screenshot > aside
+{
+	align-items: start;
+	margin: -16px;
+}
+body > main > section.screenshot > main
+{
+	display: block;
+}
+
+@media(min-width: 750px)
+{
+	body > main > section.screenshot
+	{
+		overflow-x: initial;
+	}
+	body > main > section.screenshot > aside
+	{
+		margin: 16px;
+		width: 280px;
+	}
+	body > main > section.screenshot.left > aside
+	{
+		float: left;
+		margin-left: -16px;
+	}
+	body > main > section.screenshot.left > main
+	{
+		margin-left: 280px;
+	}
+	body > main > section.screenshot.right > aside
+	{
+		float: right;
+		margin-right: -16px;
+	}
+	body > main > section.screenshot.right > main
+	{
+		margin-right: 280px;
+	}
+}
+
 @media(min-width: 940px)
 {
 	div.screenshots
 	{
 		margin: 0 -110px;
+		transition: all 100ms ease;
+	}
+	body > main > section.screenshot > aside
+	{
+		width: 370px;
+		transition: all 100ms ease;
+	}
+	body > main > section.screenshot.left > aside
+	{
+		margin-left: -110px;
+	}
+	body > main > section.screenshot.right > aside
+	{
+		margin-right: -110px;
 	}
 }
 @media(min-width: 1040px)
@@ -569,12 +629,38 @@ div.screenshots
 	{
 		margin: 0 -160px;
 	}
+	body > main > section.screenshot > aside
+	{
+		width: 420px;
+	}
+	body > main > section.screenshot.left > aside
+	{
+		margin-left: -160px;
+	}
+	body > main > section.screenshot.right > aside
+	{
+		margin-right: -160px;
+	}
 }
 @media(min-width: 1140px)
 {
 	div.screenshots
 	{
 		margin: 0 -210px;
+	}
+	body > main > section.screenshot > aside
+	{
+		width: 470px;
+		margin-top: -0.5em;
+		margin-bottom: -0.5em;
+	}
+	body > main > section.screenshot.left > aside
+	{
+		margin-left: -210px;
+	}
+	body > main > section.screenshot.right > aside
+	{
+		margin-right: -210px;
 	}
 }
 @media(min-width: 1240px)
@@ -583,12 +669,40 @@ div.screenshots
 	{
 		margin: 0 -260px;
 	}
+	body > main > section.screenshot > aside
+	{
+		width: 520px;
+		margin-top: -1em;
+		margin-bottom: -1em;
+	}
+	body > main > section.screenshot.left > aside
+	{
+		margin-left: -260px;
+	}
+	body > main > section.screenshot.right > aside
+	{
+		margin-right: -260px;
+	}
 }
 @media(min-width: 1340px)
 {
 	div.screenshots
 	{
 		margin: 0 -310px;
+	}
+	body > main > section.screenshot > aside
+	{
+		width: 570px;
+		margin-top: -1.5em;
+		margin-bottom: -1.5em;
+	}
+	body > main > section.screenshot.left > aside
+	{
+		margin-left: -310px;
+	}
+	body > main > section.screenshot.right > aside
+	{
+		margin-right: -310px;
 	}
 }
 @media(min-width: 1440px)
@@ -597,30 +711,54 @@ div.screenshots
 	{
 		margin: 0 -360px;
 	}
+	body > main > section.screenshot > aside
+	{
+		width: 620px;
+		margin-top: -2em;
+		margin-bottom: -2em;
+	}
+	body > main > section.screenshot.left > aside
+	{
+		margin-left: -360px;
+	}
+	body > main > section.screenshot.right > aside
+	{
+		margin-right: -360px;
+	}
 }
 
-div.screenshots > a
+div.screenshots > a,
+body > main > section.screenshot > aside > a
 {
 	flex: 50%;
-    max-width: 50%;
+	max-width: 50%;
 	text-align: center;
 	text-decoration: none;
 	position: relative;
 }
 
-div.screenshots > a > img
+body > main > section.screenshot > aside > a
+{
+	flex: 100%;
+	max-width: 100%;
+}
+
+div.screenshots > a > img,
+body > main > section.screenshot > aside > a > img
 {
 	text-align: center;
 	max-width: 100%;
 }
 
-div.screenshots > a.dark > img
+div.screenshots > a.dark > img,
+body > main > section.screenshot > aside > a.dark > img
 {
 	opacity: 1;
 	transition: 300ms ease;
 }
 
-div.screenshots > a.dark > img.dark
+div.screenshots > a.dark > img.dark,
+body > main > section.screenshot > aside > a.dark > img.dark
 {
 	position: absolute;
 	top: 0;
@@ -630,12 +768,15 @@ div.screenshots > a.dark > img.dark
 }
 
 div.screenshots > a.dark > img.dark,
-div.screenshots > a.dark:hover > img
+div.screenshots > a.dark:hover > img,
+body > main > section.screenshot > aside > a.dark > img.dark,
+body > main > section.screenshot > aside > a.dark:hover > img
 {
 	opacity: 0;
 }
 
-div.screenshots > a.dark:hover > img.dark
+div.screenshots > a.dark:hover > img.dark,
+body > main > section.screenshot > aside > a.dark:hover > img.dark
 {
 	opacity: 1;
 }
@@ -781,6 +922,7 @@ nav.iconized-link-list > a
 	color: #333;
 	font-weight: normal;
 	text-decoration: none;
+	border-radius: 4px;
 }
 
 nav.iconized-link-list > a:hover,
