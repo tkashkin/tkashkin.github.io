@@ -743,22 +743,36 @@ body > main > section.screenshot > aside > a
 	max-width: 100%;
 }
 
+div.screenshots > a > picture,
+body > main > section.screenshot > aside > a > picture
+{
+	width: 100%;
+}
+
 div.screenshots > a > img,
-body > main > section.screenshot > aside > a > img
+body > main > section.screenshot > aside > a > img,
+div.screenshots > a > picture,
+body > main > section.screenshot > aside > a > picture,
+div.screenshots > a > picture > img,
+body > main > section.screenshot > aside > a > picture > img
 {
 	text-align: center;
 	max-width: 100%;
 }
 
 div.screenshots > a.dark > img,
-body > main > section.screenshot > aside > a.dark > img
+body > main > section.screenshot > aside > a.dark > img,
+div.screenshots > a.dark > picture,
+body > main > section.screenshot > aside > a.dark > picture
 {
 	opacity: 1;
 	transition: 300ms ease;
 }
 
 div.screenshots > a.dark > img.dark,
-body > main > section.screenshot > aside > a.dark > img.dark
+body > main > section.screenshot > aside > a.dark > img.dark,
+div.screenshots > a.dark > picture.dark,
+body > main > section.screenshot > aside > a.dark > picture.dark
 {
 	position: absolute;
 	top: 0;
@@ -770,18 +784,25 @@ body > main > section.screenshot > aside > a.dark > img.dark
 div.screenshots > a.dark > img.dark,
 div.screenshots > a.dark:hover > img,
 body > main > section.screenshot > aside > a.dark > img.dark,
-body > main > section.screenshot > aside > a.dark:hover > img
+body > main > section.screenshot > aside > a.dark:hover > img,
+div.screenshots > a.dark > picture.dark,
+div.screenshots > a.dark:hover > picture,
+body > main > section.screenshot > aside > a.dark > picture.dark,
+body > main > section.screenshot > aside > a.dark:hover > picture
 {
 	opacity: 0;
 }
 
 div.screenshots > a.dark:hover > img.dark,
-body > main > section.screenshot > aside > a.dark:hover > img.dark
+body > main > section.screenshot > aside > a.dark:hover > img.dark,
+div.screenshots > a.dark:hover > picture.dark,
+body > main > section.screenshot > aside > a.dark:hover > picture.dark
 {
 	opacity: 1;
 }
 
-div.screenshots.remove-padding > a > img
+div.screenshots.remove-padding > a > img,
+div.screenshots.remove-padding > a > picture
 {
 	margin: -10%;
 }
@@ -831,11 +852,12 @@ a.button > i
 
 a.button > span.counter
 {
+	display: inline-block;
 	opacity: 0.2;
 	transition: 100ms;
 	padding: 1em 0.5em;
+	margin: -1em;
 	margin-left: 0.5em;
-	margin-right: -1em;
 	background: rgba(0, 0, 0, 0.1);
 }
 
