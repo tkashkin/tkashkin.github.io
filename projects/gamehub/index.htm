@@ -66,7 +66,7 @@
 				</a>
 				<hr />
 				<a class="button accent-orange package-deb" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
-					<i><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span></i> <span>.deb</span> <span class="counter">0</span>
+					<i><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span> <span class="fl-linuxmint"></span></i> <span>.deb</span> <span class="counter">0</span>
 				</a>
 				<a class="button package-appimage" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
 					<i class="fas fa-box"></i> <span>AppImage</span> <span class="counter">0</span>
@@ -74,6 +74,26 @@
 				<a class="button package-flatpak" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
 					<i class="fl-flathub"></i> <span>flatpak</span> <span class="counter">0</span>
 				</a>
+			</section>
+		</main>
+
+		<main id="/installation">
+			<section>
+				<header>
+					<h2><a class="anchor" name="/installation" href="/projects/gamehub/#/installation" data-text-ru="Установка">Installation</a></h2>
+				</header>
+				<h4><a class="anchor" name="/installation/ubuntu" href="/projects/gamehub/#/installation/ubuntu">Debian, Ubuntu, elementary OS, Linux Mint, ...</a> <i style="float: right;"><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span> <span class="fl-linuxmint"></span></i></h4>
+				<p><span data-text-ru="Установите">Install</span> <a class="package-deb" target="_blank" href="https://github.com/tkashkin/GameHub/releases" data-text-ru="пакет debian">debian package</a> <span data-text-ru="или используйте">or use</span> <a target="_blank" href="https://launchpad.net/~tkashkin/+archive/ubuntu/gamehub">PPA</a>:</p>
+				<pre class="terminal"><i># install if `add-apt-repository` is not available</i>
+sudo apt install --no-install-recommends <b>software-properties-common</b>
+
+sudo add-apt-repository <b>ppa:tkashkin/gamehub</b>
+sudo apt update
+sudo apt install <b>com.github.tkashkin.gamehub</b></pre>
+				<h4><a class="anchor" name="/installation/arch" href="/projects/gamehub/#/installation/arch">Arch Linux, Manjaro</a> <i style="float: right;"><span class="fl-archlinux"></span> <span class="fl-manjaro"></span></i></h4>
+				<p>AUR: <a target="_blank" href="https://aur.archlinux.org/packages/gamehub-git/">gamehub-git</a></p>
+				<h4><a class="anchor" name="/installation/generic" href="/projects/gamehub/#/installation/generic" data-text-ru="Другие дистрибутивы">Other distros</a> <i style="float: right;"><span class="fl-tux"></span></i></h4>
+				<p><span data-text-ru="Смотрите подробные">See detailed</span> <a class="github" target="_blank" href="https://github.com/tkashkin/GameHub/#installation" data-text-ru="инструкции по установке">installation instructions</a>.</p>
 			</section>
 		</main>
 
@@ -97,7 +117,7 @@
 			</section>
 		</main>
 
-		<main id="/games" class="dim continue">
+		<main id="/games" class="dim">
 			<section class="screenshot right">
 				<aside>
 					<a target="_blank" href="/projects/gamehub/res/screenshots/light@2x/install_compat.webp">

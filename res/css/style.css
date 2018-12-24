@@ -322,6 +322,11 @@ body > main > section > header *
 	margin-bottom: 0.3em;
 }
 
+body > main > section h4
+{
+	margin-bottom: 0;
+}
+
 body > footer
 {
 	background-color: #333;
@@ -384,6 +389,25 @@ body > footer > section > section > nav > a.active
 	border-bottom: 2px #0d52bf solid;
 	font-weight: bold;
 	color: #eee !important;
+}
+
+pre.terminal
+{
+	background: #333;
+	color: #eee;
+	border-radius: 4px;
+	margin: 8px -4px;
+	padding: 8px 4px;
+	overflow: auto;
+	font-size: 0.8em;
+	transition: all 100ms ease;
+	clear: both;
+}
+
+pre.terminal > i
+{
+	color: #999;
+	user-select: none;
 }
 
 ul.projects
@@ -990,6 +1014,12 @@ nav.iconized-link-list > a > span
 	nav.iconized-link-list > a
 	{
 		padding: 8px 16px;
+	}
+
+	pre.terminal
+	{
+		margin: 8px -8px;
+		padding: 8px;
 	}
 }
 
