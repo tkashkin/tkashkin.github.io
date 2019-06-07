@@ -26,7 +26,7 @@
 
 	function asset_update_links(asset)
 	{
-		if(asset.name.startsWith("GameHub-bionic-"))
+		if(asset.name.startsWith("GameHub-"))
 		{
 			for(var ext in asset_types)
 			{

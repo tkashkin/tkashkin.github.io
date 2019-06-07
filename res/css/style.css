@@ -59,6 +59,16 @@ body.accent-orange a:hover
 	color: #cc3b02;
 }
 
+body.accent-purple a
+{
+	color: #7239b3;
+}
+
+body.accent-purple a:hover
+{
+	color: #452981;
+}
+
 a.anchor
 {
 	font-weight: bold;
@@ -83,12 +93,14 @@ a.anchor:hover
 	color: #333;
 }
 
-body.accent-orange a.anchor
+body.accent-orange a.anchor,
+body.accent-purple a.anchor
 {
 	color: #333;
 }
 
-body.accent-orange a.anchor:hover
+body.accent-orange a.anchor:hover,
+body.accent-purple a.anchor:hover
 {
 	color: #333;
 }
@@ -125,6 +137,11 @@ body.accent-orange > header
 {
 	background-color: #f37329;
 	color: #333;
+}
+
+body.accent-purple > header
+{
+	background-color: #7239b3;
 }
 
 body > header,
@@ -212,7 +229,8 @@ body > nav > section a
 	font-weight: normal;
 }
 
-body.accent-orange > nav > section a
+body.accent-orange > nav > section a,
+body.accent-purple > nav > section a
 {
 	color: #333;
 }
@@ -280,6 +298,23 @@ body.accent-orange > nav > section a.active
 }
 
 body.accent-orange > nav > section a.active:hover
+{
+	color: white;
+}
+
+body.accent-purple > nav > section a:hover
+{
+	background-color: rgba(114, 57, 179, 0.8);
+	color: white;
+}
+
+body.accent-purple > nav > section a.active
+{
+	color: #7239b3;
+	border-bottom: 2px #7239b3 solid;
+}
+
+body.accent-purple > nav > section a.active:hover
 {
 	color: white;
 }
@@ -890,25 +925,46 @@ a.button > span.counter.visible
 	opacity: 1;
 }
 
-body.accent-orange a.button,
+body.accent-orange a.button:not(.accent-purple),
 a.button.accent-orange
 {
 	color: #eee;
 	background-color: #ffa154;
 }
 
-body.accent-orange a.button:hover,
+body.accent-orange a.button:not(.accent-purple):hover,
 a.button.accent-orange:hover
 {
 	color: #eee;
 	background-color: #f37329;
 }
 
-body.accent-orange a.button:active,
+body.accent-orange a.button:not(.accent-purple):active,
 a.button.accent-orange:active
 {
 	color: #eee;
 	background-color: #cc3b02;
+}
+
+body.accent-purple a.button:not(.accent-orange),
+a.button.accent-purple
+{
+	color: #eee;
+	background-color: #a56de2;
+}
+
+body.accent-purple a.button:not(.accent-orange):hover,
+a.button.accent-purple:hover
+{
+	color: #eee;
+	background-color: #7239b3;
+}
+
+body.accent-purple a.button:not(.accent-orange):active,
+a.button.accent-purple:active
+{
+	color: #eee;
+	background-color: #452981;
 }
 
 a.button.github
