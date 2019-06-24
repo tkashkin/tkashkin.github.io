@@ -490,7 +490,7 @@ ul.projects > li > a:first-child
 	min-height: 100%;
 }
 
-ul.projects > li > a:first-child:hover
+ul.projects > li:hover > a:first-child
 {
 	background-color: #fcfcfc;
 	box-shadow: 0 1px 16px 0 rgba(51, 51, 51, 0.5);
@@ -909,22 +909,6 @@ a.button > i
 	margin-right: 0.8em;
 }
 
-a.button > span.counter
-{
-	display: inline-block;
-	opacity: 0.2;
-	transition: 100ms;
-	padding: 1em 0.5em;
-	margin: -1em;
-	margin-left: 0.5em;
-	background: rgba(0, 0, 0, 0.1);
-}
-
-a.button > span.counter.visible
-{
-	opacity: 1;
-}
-
 body.accent-orange a.button:not(.accent-purple),
 a.button.accent-orange
 {
@@ -1098,4 +1082,170 @@ body > nav
 	position: sticky;
 	top: 0;
 	z-index: 10;
+}
+
+ul.releases
+{
+	margin: 4px -4px;
+	padding: 8px 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: visible;
+	flex-wrap: nowrap;
+}
+
+ul.releases > li
+{
+	margin: 4px;
+	padding: 0 8px;
+	margin-left: -12px;
+	text-indent: 0;
+	list-style-type: none;
+	position: relative;
+	display: inline-block;
+	width: 280px;
+	min-width: 280px;
+}
+
+ul.releases > li:first-child
+{
+	margin-left: -4px;
+}
+
+ul.releases > li > a:first-child
+{
+	display: block;
+	box-shadow: 0 1px 4px 0 #333;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #333;
+	text-decoration: none;
+	font-size: 13px;
+	padding: 16px;
+	padding-bottom: 120px;
+	font-weight: normal;
+	box-sizing: border-box;
+	min-height: 100%;
+}
+
+ul.releases > li:hover > a:first-child
+{
+	background-color: #fcfcfc;
+	box-shadow: 0 1px 16px 0 rgba(51, 51, 51, 0.5);
+}
+
+ul.releases > li > a:first-child:active
+{
+	background-color: #eee;
+	box-shadow: 0 1px 24px 8px rgba(51, 51, 51, 0.33);
+}
+
+ul.releases > li > a:first-child > *
+{
+	display: block;
+}
+
+ul.releases > li > a:first-child > h3
+{
+	margin: 0;
+	padding: 0 0 0.3em 0;
+}
+
+ul.releases > li > a:first-child > h3 > span.branch
+{
+	font-weight: normal;
+}
+
+ul.releases > li > a:first-child > h4
+{
+	margin: 0;
+	padding: 0 0 0.5em 0;
+}
+
+ul.releases > li > a:first-child > p
+{
+	margin: 0;
+	padding: 0;
+}
+
+ul.releases > li > ul.packages
+{
+	margin: 0;
+	padding: 0;
+	border-top: 1px #ccc solid;
+	position: absolute;
+	bottom: 1px;
+	left: 9px;
+	right: 9px;
+	text-align: left;
+}
+
+ul.releases > li > ul.packages > li
+{
+	text-indent: 0;
+	list-style-type: none;
+}
+
+ul.releases > li > ul.packages > li > a
+{
+	display: block;
+	padding: 4px 16px;
+	color: #333;
+	text-decoration: none;
+	position: relative;
+}
+
+ul.releases > li > ul.packages > li > a > i
+{
+	margin-left: 0.8em;
+	position: absolute;
+	right: 16px;
+}
+
+ul.releases > li > ul.packages > li:last-child > a
+{
+	border-radius: 0 0 4px 4px;
+}
+
+ul.releases > li > ul.packages > li.accent-orange > a:hover
+{
+	background-color: #ffc27d;
+}
+
+ul.releases > li > ul.packages > li.accent-orange > a:active
+{
+	background-color: #ffa154;
+}
+
+ul.releases > li > ul.packages > li.accent-purple > a:hover
+{
+	background-color: #e4c6fa;
+}
+
+ul.releases > li > ul.packages > li.accent-purple > a:active
+{
+	background-color: #cd9ef7;
+}
+
+ul.releases > li.release-master > a:first-child
+{
+	border: 1px #7239b3 solid;
+	background-color: rgba(114, 57, 179, 0.1);
+}
+
+ul.releases > li.release-master > ul.packages
+{
+	border-top-color: rgba(114, 57, 179, 0.3);
+}
+
+ul.releases > li.release-dev > a:first-child
+{
+	border: 1px #485a6c solid;
+	background-color: rgba(72, 90, 108, 0.1);
+}
+
+ul.releases > li.release-dev > ul.packages
+{
+	border-top-color: rgba(72, 90, 108, 0.3);
 }

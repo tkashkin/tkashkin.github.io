@@ -19,33 +19,34 @@
 	}
 
 	var asset_types = {
-		'.deb': 'a.package-deb',
-		'.AppImage': 'a.package-appimage',
-		'.flatpak': 'a.package-flatpak'
+		'.deb': 'li.package-deb > a',
+		'.AppImage': 'li.package-appimage > a',
+		'.flatpak': 'li.package-flatpak > a'
 	};
 
-	function asset_update_links(asset)
+	function update_release(release)
 	{
-		if(asset.name.startsWith("GameHub-"))
+		console.log(release);
+		q(release.prerelease ? 'li.release-dev' : 'li.release-master', function(root)
 		{
-			for(var ext in asset_types)
+			root.firstElementChild.href = release.html_url;
+			root.querySelector('span.version').innerText = release.name;
+			for(var i in release.assets)
 			{
-				if(asset.name.endsWith(ext))
+				var asset = release.assets[i];
+				if(asset.name.startsWith("GameHub-"))
 				{
-					q(asset_types[ext], function(link)
+					for(var ext in asset_types)
 					{
-						link.href = asset.browser_download_url;
-						var counter = link.querySelector('span.counter');
-						if(counter)
+						if(asset.name.endsWith(ext))
 						{
-							counter.innerText = asset.download_count;
-							counter.classList.add('visible');
+							root.querySelector(asset_types[ext]).href = asset.browser_download_url;
+							break;
 						}
-					});
-					return;
+					}
 				}
 			}
-		}
+		});
 	}
 
 	setTimeout(function(){
@@ -54,11 +55,22 @@
 			try
 			{
 				var releases = JSON.parse(data);
-				var assets = releases[0].assets;
-				for(var i in assets)
+				var master_processed = false;
+				var dev_processed = false;
+				for(var r in releases)
 				{
-					var asset = assets[i];
-					asset_update_links(asset);
+					var release = releases[r];
+					if(!release.prerelease && !master_processed)
+					{
+						update_release(release);
+						master_processed = true;
+					}
+					if(release.prerelease && !dev_processed)
+					{
+						update_release(release);
+						dev_processed = true;
+					}
+					if(master_processed && dev_processed) break;
 				}
 			}
 			catch(e)

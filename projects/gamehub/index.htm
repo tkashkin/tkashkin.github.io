@@ -10,23 +10,23 @@
 		<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 		<link rel="stylesheet" href="//cdn.rawgit.com/Lukas-W/font-logos/v0.11/assets/font-logos.css" />
 
-		<link rel="apple-touch-icon" sizes="57x57" href="/res/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/res/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/res/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/res/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/res/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/res/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/res/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/res/favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/res/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/res/favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/res/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/res/favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/res/favicon/favicon-16x16.png">
-		<link rel="manifest" href="/res/favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#3689e6">
-		<meta name="msapplication-TileImage" content="/res/favicon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#3689e6">
+		<link rel="apple-touch-icon" sizes="57x57" href="/res/favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="/res/favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/res/favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/res/favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/res/favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/res/favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/res/favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/res/favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/res/favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192"  href="/res/favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/res/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="/res/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/res/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/res/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#7239b3" />
+		<meta name="msapplication-TileImage" content="/res/favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#7239b3" />
 	</head>
 	<body class="accent-purple">
 		<header>
@@ -64,16 +64,69 @@
 				<a class="button github" target="_blank" href="https://github.com/tkashkin/GameHub/#installation">
 					<i class="fas fa-cloud-download-alt"></i> <span data-text-ru="Инструкции по установке">Installation instructions</span>
 				</a>
-				<hr />
-				<a class="button accent-orange package-deb" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
-					<i><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span> <span class="fl-linuxmint"></span></i> <span>.deb</span> <span class="counter">0</span>
-				</a>
-				<a class="button package-appimage" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
-					<i class="fas fa-box"></i> <span>AppImage</span> <span class="counter">0</span>
-				</a>
-				<a class="button package-flatpak" target="_blank" href="https://github.com/tkashkin/GameHub/releases">
-					<i class="fl-flathub"></i> <span>flatpak</span> <span class="counter">0</span>
-				</a>
+			</section>
+		</main>
+
+		<main id="/releases" class="continue">
+			<section>
+				<header>
+					<h2><a class="anchor" name="/releases" href="/projects/gamehub/#/releases" data-text-ru="Релизы">Releases</a></h2>
+				</header>
+			</section>
+		</main>
+		<main class="continue">
+			<section>
+				<ul class="releases">
+					<li class="release-master">
+						<a target="_blank" href="https://github.com/tkashkin/GameHub/releases/latest">
+							<h3><span data-text-ru="Стабильный">Stable</span> <span class="branch">(master)</span></h3>
+							<h4><span data-text-ru="Версия:">Version:</span> <span class="version"></span></h4>
+							<p data-text-ru="Стабильные версии выпускаются тогда, когда новые функции реализованы и работают без известных проблем.">Stable versions are released when new features are implemented and working without known issues.</p>
+							<p data-text-ru="Стабильные версии обычно не содержат последних функций и улучшений.">Stable versions usually do not contain most recent features and improvements.</p>
+						</a>
+						<ul class="packages">
+							<li class="package-deb accent-orange">
+								<a target="_blank" href="https://github.com/tkashkin/GameHub/releases/latest">
+									<span>.deb</span> <i><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span> <span class="fl-linuxmint"></span></i>
+								</a>
+							</li>
+							<li class="package-appimage accent-purple">
+								<a target="_blank" href="https://github.com/tkashkin/GameHub/releases/latest">
+									<span>AppImage</span> <i><span class="fas fa-box"></span></i>
+								</a>
+							</li>
+							<li class="package-flatpak accent-purple">
+								<a target="_blank" href="https://github.com/tkashkin/GameHub/releases/latest">
+									<span>flatpak</span> <i class="fl-flathub"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="release-dev">
+						<a target="_blank" href="https://github.com/tkashkin/GameHub/releases">
+							<h3><span data-text-ru="В разработке">Development</span> <span class="branch">(dev)</span></h3>
+							<h4><span data-text-ru="Версия:">Version:</span> <span class="version"></span></h4>
+							<p data-text-ru="Версии в разработке содержат последние функции и улучшения, но могут быть менее стабильны.">Development versions contain new features and improvements, but may be less stable.</p>
+						</a>
+						<ul class="packages">
+							<li class="package-deb accent-orange">
+								<a target="_blank" href="https://github.com/tkashkin/GameHub/releases">
+									<span>.deb</span> <i><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span> <span class="fl-linuxmint"></span></i>
+								</a>
+							</li>
+							<li class="package-appimage accent-purple">
+								<a target="_blank" href="https://github.com/tkashkin/GameHub/releases">
+									<span>AppImage</span> <i><span class="fas fa-box"></span></i>
+								</a>
+							</li>
+							<li class="package-flatpak accent-purple">
+								<a target="_blank" href="https://github.com/tkashkin/GameHub/releases">
+									<span>flatpak</span> <i class="fl-flathub"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</section>
 		</main>
 
@@ -82,7 +135,11 @@
 				<header>
 					<h2><a class="anchor" name="/installation" href="/projects/gamehub/#/installation" data-text-ru="Установка">Installation</a></h2>
 				</header>
-				<h4><a class="anchor" name="/installation/ubuntu" href="/projects/gamehub/#/installation/ubuntu">Debian, Ubuntu, elementary OS, Linux Mint, ...</a> <i style="float: right;"><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span> <span class="fl-linuxmint"></span></i></h4>
+				<h4><a class="anchor" name="/installation/pop" href="/projects/gamehub/#/installation/pop">Pop!_OS</a></h4>
+				<p><span data-text-ru="GameHub доступен в репозиториях Pop!_OS. Установите его из">GameHub is available in Pop!_OS repositories. Install it from</span> <a href="appstream://com.github.tkashkin.gamehub">Pop!_Shop</a> <span data-text-ru="или используйте терминал:">or use terminal:</span></p>
+				<pre class="terminal">sudo apt install <b>com.github.tkashkin.gamehub</b></pre>
+				<p><span data-text-ru="Используйте">Use</span> <a href="/projects/gamehub/#/installation/ubuntu" data-text-ru="инструкции для Ubuntu">Ubuntu instructions</a><span data-text-ru=", чтобы получить последние релизы в разработке."> to get latest development releases.</span></p>
+				<h4><a class="anchor" name="/installation/ubuntu" href="/projects/gamehub/#/installation/ubuntu">Debian, Ubuntu, elementary OS, Pop!_OS, Linux Mint, ...</a> <i style="float: right;"><span class="fl-debian"></span> <span class="fl-ubuntu"></span> <span class="fl-elementary"></span> <span class="fl-linuxmint"></span></i></h4>
 				<p><span data-text-ru="Установите">Install</span> <a class="package-deb" target="_blank" href="https://github.com/tkashkin/GameHub/releases" data-text-ru="пакет debian">debian package</a> <span data-text-ru="или используйте">or use</span> <a target="_blank" href="https://launchpad.net/~tkashkin/+archive/ubuntu/gamehub">PPA</a>:</p>
 				<pre class="terminal"><i># install if `add-apt-repository` is not available</i>
 sudo apt install --no-install-recommends <b>software-properties-common</b>
@@ -91,7 +148,9 @@ sudo add-apt-repository <b>ppa:tkashkin/gamehub</b>
 sudo apt update
 sudo apt install <b>com.github.tkashkin.gamehub</b></pre>
 				<h4><a class="anchor" name="/installation/arch" href="/projects/gamehub/#/installation/arch">Arch Linux, Manjaro</a> <i style="float: right;"><span class="fl-archlinux"></span> <span class="fl-manjaro"></span></i></h4>
-				<p>AUR: <a target="_blank" href="https://aur.archlinux.org/packages/gamehub-git/">gamehub-git</a></p>
+				<p><span data-text-ru="GameHub в AUR:">GameHub in AUR:</span> <a target="_blank" href="https://aur.archlinux.org/packages/gamehub-git">gamehub-git</a>, <a target="_blank" href="https://aur.archlinux.org/packages/gamehub">gamehub</a></p>
+				<h4><a class="anchor" name="/installation/fedora" href="/projects/gamehub/#/installation/fedora">fedora</a> <i style="float: right;"><span class="fl-fedora"></span></span></i></h4>
+				<p><span data-text-ru="GameHub в репозиториях fedora:">GameHub in fedora repositories:</span> <a target="_blank" href="https://apps.fedoraproject.org/packages/gamehub">gamehub</a></p>
 				<h4><a class="anchor" name="/installation/generic" href="/projects/gamehub/#/installation/generic" data-text-ru="Другие дистрибутивы">Other distros</a> <i style="float: right;"><span class="fl-tux"></span></i></h4>
 				<p><span data-text-ru="Смотрите подробные">See detailed</span> <a class="github" target="_blank" href="https://github.com/tkashkin/GameHub/#installation" data-text-ru="инструкции по установке">installation instructions</a>. <span data-text-ru="Пакеты для других дистрибутивов обсуждаются">Packages for other distros are discussed</span> <a class="github" target="_blank" href="https://github.com/tkashkin/GameHub/issues/156" data-text-ru="здесь">here</a>.</p>
 			</section>
